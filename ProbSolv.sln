@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProbSolv", "ProbSolv\ProbSolv.csproj", "{1E36E14B-04B2-42C0-AA54-C79C0F2DF464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E36E14B-04B2-42C0-AA54-C79C0F2DF464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E36E14B-04B2-42C0-AA54-C79C0F2DF464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E36E14B-04B2-42C0-AA54-C79C0F2DF464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E36E14B-04B2-42C0-AA54-C79C0F2DF464}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {026E413F-CF18-4BD0-9DC9-548F8E79CF16}
+	EndGlobalSection
+EndGlobal
