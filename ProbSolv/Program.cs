@@ -10,30 +10,40 @@ namespace ProbSolv
 
         static void Main(string[] args)
         {
-            //Console.WriteLine(Tet("abcd"));
 
-            Manager employee = new Manager();
-            employee.Name = "yahya";
-            employee.ID = 1;
-            employee.BasicSalary = 900;
-            
-            Console.WriteLine(employee.ToString()
-                + Environment.NewLine
-                + "Bonus: " + employee.CalcHourBonus(5).ToString()
-                );
+            PostDatabase db = new PostDatabase();
+            List<string> newPosts = new List<string>();
+            newPosts.Add("original post");
+            newPosts.Add("#tag post");
+            newPosts.Add("@mention post");
+            newPosts.Add("http post");
 
-            RegularEmp reg = new RegularEmp();
-            reg.Name = "REgular";
-            reg.ID = 12;
-            reg.BasicSalary = 900;
+            Post postObj;
+            foreach (var post in newPosts)
+            {
+                if (post.StartsWith("#"))
+                {
+                    postObj = new TagPost();
+                }
+                else if (post.StartsWith("#"))
+                {
+                    postObj = new MentionPost();
+                }
+                else if (post.StartsWith("http"))
+                {
+                    postObj = new LinkPost();
+                }
+                else
+                {
+                    postObj = new Post();
+                }
 
-            Console.WriteLine(reg.ToString()
-                + Environment.NewLine
-                + "Bonus: " + reg.CalcHourBonus(5).ToString()
-                );
-
+                string result = postObj.CreatePost(db, post);
+                Console.WriteLine(result);
+            }
 
             Console.ReadKey();
+            //Console.WriteLine(Tet("abcd"));
             
             //string str = "ALi";
 
